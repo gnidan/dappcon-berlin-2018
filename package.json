@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/gnidan/dappcon-berlin-2018#readme",
   "devDependencies": {
-    "eth-gas-reporter": "^0.1.10",
-    "truffle-hdwallet-provider": "0.0.5"
+    "eth-gas-reporter": "^0.1.10"
   }
 }
