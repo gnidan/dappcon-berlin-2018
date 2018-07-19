@@ -32,11 +32,13 @@ contract("Registrar", (accounts) => {
     }
   });
 
-  it.skip("lists registry keys", async () => {
+  it.only("lists registry keys", async () => {
     let registry = "list-test";
 
     await registrar.set(registry, "current-location", "dappcon");
-    await registrar.set(registry, "current-location", "still-dappcon");
+    let { tx: setTx } = await registrar.set(registry, "current-location", "still-dappcon");
+    console.log("set tx:", setTx);
+
     await registrar.set(registry, "is-berlin-cool", "jawohl!");
 
     let num = await registrar.size(registry);
@@ -44,6 +46,10 @@ contract("Registrar", (accounts) => {
     for (var i = 0; i < num; i++) {
       keys.push(await registrar.list(registry, i));
     }
+
+    // run size() call as transaction, to debug
+    let { tx: sizeTx } = await registrar.size.sendTransaction(registry);
+    console.log("size tx:", sizeTx);
 
     assert.deepEqual(keys, ["current-location", "is-berlin-cool"]);
   });
