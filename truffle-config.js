@@ -30,5 +30,12 @@ module.exports = {
       confirmations: 2,     // # confirmations to wait between each deployment
       timeoutBlocks: 75   // # of blocks to wait for network to mine a deployment before erroring
     }
-  }
+  },
+  // mocha: {
+  //   reporter: 'eth-gas-reporter',
+  //   reporterOptions : {
+  //     currency: 'EUR',
+  //     gasPrice: 21
+  //   }
+  // }
 };
