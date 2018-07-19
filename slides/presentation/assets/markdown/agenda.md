@@ -1,0 +1,4 @@
+- Start with a sample project
+- Debug failing tests and fix them
+- Explore new Truffle features
+- "Mob program" new features

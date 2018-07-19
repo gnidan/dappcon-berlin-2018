@@ -1,0 +1,3 @@
+- Node 8 or above
+- Sample project repo
+- Truffle "next" build

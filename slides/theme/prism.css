@@ -1,0 +1,105 @@
+code,
+pre {
+  color: #ffffff;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5e464d;
+}
+
+.token.punctuation {
+  color: #5e464d;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+  color: #e4a663;
+}
+
+.token.property,
+.token.function {
+  color: #25a9e0;
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+  color: #f8f5f0;
+}
+
+.token.attr-name {
+  color: #e0dad7;
+}
+
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+  color: #ffcc99;
+}
+
+.token.placeholder,
+.token.variable {
+  color: #ffcc99;
+}
+
+.token.deleted {
+  text-decoration: line-through;
+}
+
+.token.inserted {
+  border-bottom: 1px dotted #f8f5f0;
+  text-decoration: none;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.important {
+  color: #e0dad7;
+}
+
+.token.entity {
+  cursor: help;
+}
